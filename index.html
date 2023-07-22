@@ -4,9 +4,608 @@
     <meta charset="UTF-8">
     <title>GADGET REPAIR HQ</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="style.css">
+       
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- 
+
+     <style>
+       *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid{
+    margin:0;
+    padding:0;
+}
+
+body{
+    border: 0;
+    margin:0;
+font-family:'Montserrat', sans-serif;
+
+}
+
+/* navbar section */
+.design{
+    dosplay:flex;
+    justify-content: space-between;
+    margin-right:10px;
+    padding-right: 20px;
+}
+
+.nav-link{
+    display: flex;
+    justify-content: space-between;
+    margin:10px;
+    cursor: pointer;
+}
+
+.nav-link:hover,.nav-link:visited {
+    background-color: #E5E8ED;
+}
+
+.nav-link:link,.nav-link:active{
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #f5f6f7;
+}
+
+.logo{
+    width:250px;
+    height: auto;
+    background-color:white;
+}
+
+
+/* hero section */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.carousel-item {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: 0.4;}
+  to {opacity: 1;}
+}
+
+.typing{
+    margin-top:70px;
+    padding-left:10px;
+}
+
+.text{
+    line-height:1.5;
+    font-weight:bold;
+    font-size:40px;
+}
+
+.background{
+    background-color:#E5E8ED;
+    padding: 15px;
+    width: 100%;
+}
+
+.ima{
+    margin-right:80px;
+    display: inline;
+    background-color: #E5E8ED;
+}
+
+.btn{
+    background-color:#0077B5;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.fix{
+    padding-top: 10px ;
+    padding-right: 5px;
+} 
+
+/* Services */
+#services {
+    padding-bottom: 50px;
+    background-color: hsl(0, 0%, 100%);
+    margin: auto;
+}
+
+.vision {
+    display: grid;
+    text-align: center;
+    padding: 3rem;
+    color: #001423;
+}
+
+.sv {
+    font-style: initial;
+    letter-spacing: 3px;
+    padding: 3px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    justify-content: space-between;
+    gap: 20px; /* Add a gap between grid items for better spacing */
+    padding: 0 20px; /* Add horizontal padding to the grid container */
+}
+
+#ph,
+#lap,
+#tb {
+    display: block;
+    padding: 5px;
+    margin: auto;
+    border: 1px solid #87ceeb;
+    text-align: center;
+    height: 300px;
+    border-radius: 15px;
+    width: 80%;
+    font-size: 10px;
+    box-shadow: #000000 solid;
+}
+
+.set-h {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.set {
+    text-align: center;
+    padding: 20px;
+    text-indent: 0;
+    text-align: justify;
+    letter-spacing: 0;
+    white-space: normal;
+}
+
+.service-fix {
+    padding: 10px;
+}
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr); /* Two columns on screens smaller than 768px */
+    }
+    
+    #ph,
+    #lap,
+    #tb {
+        width: 90%; /* Adjust width of the elements for smaller screens */
+             font-size: 10px; /* Increase font size for better readability on smaller screens */
+    }
+}
+
+/* About us */
+.about-text{
+    text-align: center;
+    padding-top: 50px;
+    font-size:10px;
+    letter-spacing: 6px;
+    font-weight: bold;
+}
+
+.about-h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top:40px;
+}
+
+.about{
+    display: flex;
+    width: 100%;
+}
+
+.about-contain{
+    display: flex;
+    justify-content: space-between ;
+    margin-top: 55px;
+    padding: 50px;
+    padding-bottom: 5px;
+    margin: auto;
+}
+
+
+.txt{
+    text-align: left;                                              margin-left: 20px;
+    margin-right: 30px;
+    text-indent: 0;
+  text-align: justify;
+  letter-spacing: 0;
+  white-space: normal;
+}
+
+
+.fx{
+    padding-top: 20px;
+    padding-left: 30px;    
+}
+
+.about-img{
+    display: inline-block;
+    width:100%;
+    margin: auto;
+}
+
+.about-imge{
+   width:200px;
+   height: auto;
+}
+
+.about-container{
+    border: 1px solid black;
+     width:95%;
+    margin:auto;
+    padding: 20px; 
+    border: 0;
+    box-shadow: 0 0 0 1px skyblue; 
+    border-bottom-left-radius:20px ;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.fix-image{
+    padding-left: 40px;
+}
+
+/* Media query for lower screens and sizes */
+@media only screen and (max-width: 767px) {
+  /* Adjust the layout for smaller screens here */
+  
+  /* Center align the "Why Choose Us" heading */
+  .about-h1 {
+    text-align: center;
+  }
+  
+  /* Adjust the padding and font size for the about text */
+  .about-container p.txt {
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  /* Adjust the size of the images */
+  .about-img img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Adjust the font size and padding for the button */
+  .center .btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+
+/* Testimonials */
+.contain-test{
+    background-color: #E5E8ED;
+    margin-top: 60px;
+}
+
+
+
+/* Contact US */
+.contacts{
+    margin-laft:10px;
+    flex-wrap: wrap;
+    flex:1;
+    font-size: 24px ;
+    margin-bottom: 10px;
+}
+
+.form{
+    align-items: center;
+    justify-content: space-between;
+    display:inline-block;
+    width: 100%;
+    padding: 30px;
+    padding-bottom:20px;
+    margin:auto;
+}
+
+.block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 30px;
+    flex:0 1 auto;
+    margin-bottom: 20px;
+}
+
+.box{
+    margin-left: 10px;
+}
+
+.text-area{
+    width: 100%;
+    
+}
+
+.get{
+    margin:auto;
+    /* width:100%; */
+    font-weight:400px;
+    font-size:55px;
+    white-space:no-wrap;
+    
+}
+
+    .change{
+    padding:10px;
+    margin:auto;
+    display:block;
+    margin-bottom:50px;
+}
+
+
+/* Media query for screens with a maximum width of 768 pixels (e.g., small screens) */
+@media screen and (max-width: 768px) {
+    .form {
+        padding: 10px; /* Adjust padding to fit the form better on small screens */
+        padding-bottom: 10px;
+    }
+
+    .block {
+        font-size: 20px; /* Decrease font size for better readability on small screens */
+        flex-wrap: wrap; /* Allow the content to wrap to multiple lines if needed */
+    }
+}
+
+/* #button, .btn1 {
+    align-items: center;
+    margin: auto;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+} */
+
+/* Footer */
+
+
+.footer{
+    display:grid;
+   grid-template-columns:repeat(auto-fit, minmax(200px,auto));
+   gap:3.5em;
+   background: #E5E8ED;
+   padding:50px;
+}
+
+.footer-content h1{
+    color:black;
+    margin-bottom:0.5rems;
+    font-size:20px;
+}
+
+.footer-content li{
+    margin-bottom:6px;
+    list-style-type:none;
+}
+
+.footer-content li a{
+    display:inline-block;
+    color:black;
+    font-size:16px;
+    font-weight:400;
+    transition:all 40s ease;
+    text-decoration:none;
+}
+
+.footer-content li a:hover{
+    transform:translateY(-3px) translate(-5px);
+    color: #E5E8ED;
+}
+
+.footer-content p{
+   color: black;
+   font-size:16px;
+   line-height:30px;
+   margin:10px 0;}
+}
+
+.space{
+    pading-top:200px;
+}
+
+.move{
+    margin-left:150px;
+}
+
+/* Media query for lower resolution screens */
+@media only screen and (max-width: 767px) {
+  /* Adjust the layout for smaller screens here */
+  
+  /* Center align the footer content */
+  .footer-content {
+    text-align: center;
+  }
+  
+ .med{
+     text-align: center;
+     margin: auto;
+ }
+  /* Reduce the logo width for better display on smaller screens */
+  .footer-content img {
+    width: 150px;
+  }
+  
+  /* Add some space between the icons */
+  .icons a {
+    margin-right: 10px;
+  }
+  
+  /* Center align the company and contact sections */
+  .footer-content.space.move, .footer-content.space {
+    text-align: center;
+  }
+  
+  /* Add some space between the list items */
+  .footer-content li {
+    margin-bottom: 5px;
+  }
+}
+
+/* footer, p{
+    background-color: #E5E8ED;
+    text-align:center;
+} */
+
+@media (max-width:1690px){
+    section{padding:50px 5% 40px;}
+}
+
+
+@media (max-width: 600px) {
+    .cont {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Media queries for responsive layout */
+@media screen and (max-width: 768px) {
+    .about-h1 {
+        font-size: 60px;
+    }
+    
+    .center {
+        flex-direction: column;
+    }
+    
+    .fix, .fx, .fix-image {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-contain {
+        flex-direction: column;
+    }
+    
+    .txt, .fx, .fix-image {
+        margin: 10px;
+    }
+} 
+
+
+/* Media query for small screens */
+@media only screen and (max-width: 767px) {
+  /* Adjust the layout for smaller screens here */
+  
+  /* Center align the logo in the navbar */
+  .navbar-brand {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Reduce the logo width for better display on small screens */
+  .logo {
+    width: 80px;
+  }
+  
+  /* Center align the navigation links */
+  .unordered {
+    justify-content: center;
+  }
+  
+  /* Adjust the padding and font size for navbar links */
+  .navbar .nav-link {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  
+  /* Adjust the padding and font size for the hero section content */
+  .carousel.typing {
+    padding: 20px;
+  }
+  .carousel.typing h1 {
+    font-size: 24px;
+  }
+  .carousel.typing p {
+    font-size: 14px;
+  }
+  
+  /* Adjust the font size and padding for the service section */
+  .vision h1 {
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+  .grid h1 {
+    font-size: 20px;
+  }
+  .grid p {
+    font-size: 12px;
+  }
+  
+  /* Adjust the font size for the "Why Choose Us" section */
+  #aboutus h1 {
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+  .about-container p {
+    font-size: 14px;
+  }
+  
+  /* Adjust the font size and padding for the contact section */
+  .contacts h2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  .contacts input[type="text"],
+  .contacts input[type="number"],
+  .contacts input[type="email"],
+  .contacts textarea {
+    font-size: 14px;
+    padding: 5px;
+  }
+  .center .btn {
+    font-size: 14px;
+  }
+  
+  /* Adjust the font size and padding for the footer section */
+  .footer h1 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  .footer p {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .footer li {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+}
+
+       </style>
 </head>
 <body>
    <main class="container-fluid">
