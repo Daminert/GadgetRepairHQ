@@ -2,16 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GADGET REPAIR HQ</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <link rel="stylesheet" href="https://i.postimg.cc/76PFRdNT/IMG-20230717-WA0006.jpg">
+ <link rel="stylesheet" href="https://i.postimg.cc/76PFRdNT/IMG-20230717-WA0006.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-     <style>
-       *{
+      <style>
+          *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -29,6 +28,10 @@ font-family:'Montserrat', sans-serif;
 
 }
 
+.btn:hover{
+    background-color: #40b6ff;
+}
+
 /* navbar section */
 .design{
     dosplay:flex;
@@ -37,6 +40,9 @@ font-family:'Montserrat', sans-serif;
     padding-right: 20px;
 }
 
+
+ 
+.finishup{}
 .nav-link{
     display: flex;
     justify-content: space-between;
@@ -45,18 +51,19 @@ font-family:'Montserrat', sans-serif;
 }
 
 .nav-link:hover,.nav-link:visited {
-    background-color: #E5E8ED;
+    background-color: black;
 }
 
 .nav-link:link,.nav-link:active{
-    background-color: rgba(0, 0, 0, 0.1);
-    color: #f5f6f7;
+    background-color: rgba(0, 0, 0, 0.01);
+    color: rgba(0,0,0,1.2);
 }
 
 .logo{
     width:250px;
     height: auto;
     background-color:white;
+    margin-left: 25px ;
 }
 
 
@@ -83,10 +90,10 @@ font-family:'Montserrat', sans-serif;
     padding-left:10px;
 }
 
-.text{
+.text1{
     line-height:1.5;
     font-weight:bold;
-    font-size:40px;
+    font-size:56px;
 }
 
 .background{
@@ -107,11 +114,13 @@ font-family:'Montserrat', sans-serif;
     padding: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-size:18px;
 }
 
 .fix{
     padding-top: 10px ;
     padding-right: 5px;
+    font-size: 20px;
 } 
 
 /* Services */
@@ -120,6 +129,10 @@ font-family:'Montserrat', sans-serif;
     background-color: hsl(0, 0%, 100%);
     margin: auto;
 }
+
+/* .mix1{
+    height:430px;
+} */
 
 .vision {
     display: grid;
@@ -131,7 +144,7 @@ font-family:'Montserrat', sans-serif;
 .sv {
     font-style: initial;
     letter-spacing: 3px;
-    padding: 3px;
+    padding: 3px;padding: ;
 }
 
 .grid {
@@ -151,32 +164,38 @@ font-family:'Montserrat', sans-serif;
     margin: auto;
     border: 1px solid #87ceeb;
     text-align: center;
-    height: 300px;
+    height: auto;
     border-radius: 15px;
-    width: 80%;
+    width: 90%;
     font-size: 10px;
     box-shadow: #000000 solid;
 }
 
 .set-h {
     text-align: center;
-    font-size: 20px;
+    font-size: 40px;
     font-weight: bold;
     padding: 10px;
 }
 
-.set {
-    text-align: center;
-    padding: 20px;
-    text-indent: 0;
-    text-align: justify;
-    letter-spacing: 0;
-    white-space: normal;
+.set1{
+    height: 220px;
 }
+ 
+ .set {
+    text-align: center; 
+    padding: 10px;
+    text-indent: 0;
+    text-align: justify; 
+     letter-spacing: 1;
+    white-space: normal;   
+    font-size:16.2px;
+}  
 
 .service-fix {
     padding: 10px;
 }
+
 
 /* Media Query for Responsive Design */
 @media screen and (max-width: 768px) {
@@ -196,14 +215,14 @@ font-family:'Montserrat', sans-serif;
 .about-text{
     text-align: center;
     padding-top: 50px;
-    font-size:10px;
+    font-size:20px;
     letter-spacing: 6px;
     font-weight: bold;
 }
 
 .about-h1{
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .center{
@@ -235,6 +254,7 @@ font-family:'Montserrat', sans-serif;
   text-align: justify;
   letter-spacing: 0;
   white-space: normal;
+  font-size: 20px;
 }
 
 
@@ -301,9 +321,189 @@ font-family:'Montserrat', sans-serif;
 
 
 /* Testimonials */
-.contain-test{
+
+.top{
+    position:relative;
+}
+
+/* .base{
+    width: 100%;
+    margin: 50px;
+    
+} */
+
+.icont, mve{
+    position:absolute;
+    top:5px;
+    left:840px;
+    right:0;
+    bottom:0;
+    display: flex;
+}
+
+@media(max-width:800px){
+    .top{
+    position:relative;
+}
+
+.icont, mve{
+    position:absolute;
+    top:0;
+    left:260px;
+    right:0;
+    bottom:4px;
+    display: flex;
+}
+}
+
+ .mix {
+    height:140px;
+} 
+
+ .mixi,.mixit{
+    height: 140px;
+} 
+
+.fa-circle-arrow-right{
+    width:500px;
+}
+
+.sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icons{
+    display: flex;
+}
+.contain{
+    padding-bottom: 50px;
+    
+    margin: auto;
     background-color: #E5E8ED;
-    margin-top: 60px;
+}
+
+.container{
+    display: grid;
+    text-align: center;
+    padding: 3rem;
+    color: #001423;
+}
+
+.sv {
+    font-style: initial;
+    letter-spacing: 3px;
+    padding: 3px;
+}
+
+.general{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    align-content: center;
+    justify-content: space-between;
+    gap: 10px; /* Add a gap between grid items for better spacing */
+    padding: 0 20px; /* Add horizontal padding to the grid container */
+   width: 100%; 
+   margin-right: 50px;
+}
+ 
+ 
+ 
+.first,
+.second,
+.third{
+    /* display: block; */
+    padding: 5px;
+    margin: auto;
+    border: 1px solid #87ceeb;
+    text-align: center;
+    /* height: 300px; */
+    border-radius: 15px;
+    /* width: 80%; */
+    font-size: 10px;
+    box-shadow: #000000 solid;
+    background-color: white;
+}
+
+.set-h {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* .set {
+    text-align: center;
+    padding: 20px;
+    text-indent: 0;
+    text-align: justify;
+    letter-spacing: 0;
+    white-space: normal;
+} */
+
+.service-fix {
+    padding: 10px;
+}
+
+.flex-cont{
+display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    justify-content: space-between;
+    gap: 1.4rem; /* Add a gap between grid items for better spacing */
+    padding: 0 20px; /* Add horizontal padding to the grid container */
+    width: 100%;
+    
+}
+
+.img-test{
+    display: inline-block;
+}
+.testi{
+    margin-top: 10px;
+    padding-right: 10px;
+}
+
+.fontme{
+    font-size: 16px;
+    text-align: left;
+    padding: 0;
+}
+
+.fixit{
+    display:inline;
+    width:100%;
+    font-size: 16px;
+}
+
+.white(
+    white-space: nowrap;  
+)
+
+.first{
+    height:auto;
+    margin-top: 15px;
+    margin:10px;
+    padding: 0 15px;
+}
+
+
+.icons-test{
+float: right;
+}
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+    .general{
+        grid-template-columns: repeat(1, 1fr); /* Two columns on screens smaller than 768px */
+    }
+    
+    .first,
+.second,
+.third {
+        width: 90%; /* Adjust width of the elements for smaller screens */
+             font-size: 10px; /* Increase font size for better readability on smaller screens */
+    }
 }
 
 
@@ -338,8 +538,15 @@ font-family:'Montserrat', sans-serif;
 }
 
 .box{
-    margin-left: 10px;
+    margin-left: 10px;   
 }
+
+input[type=text], 
+input[type=email],
+input[type=number],.form-control{
+  border: 1px solid black;
+}
+
 
 .text-area{
     width: 100%;
@@ -361,6 +568,13 @@ font-family:'Montserrat', sans-serif;
     display:block;
     margin-bottom:50px;
 }
+
+.btn1{
+    padding-bottom: 50px;
+}
+
+
+
 
 
 /* Media query for screens with a maximum width of 768 pixels (e.g., small screens) */
@@ -421,6 +635,16 @@ font-family:'Montserrat', sans-serif;
     text-decoration:none;
 }
 
+.push{
+    margin-left:100px;
+}
+
+.fits{
+    display:inline-block;
+    Width:100%;
+    font-size: 40px;
+}
+
 .footer-content li a:hover{
     transform:translateY(-3px) translate(-5px);
     color: #E5E8ED;
@@ -438,15 +662,19 @@ font-family:'Montserrat', sans-serif;
 }
 
 .move{
-    margin-left:150px;
+    margin-left:160px;
 }
+
+  .icons a {
+    margin-left: 20px;
+  }
 
 /* Media query for lower resolution screens */
 @media only screen and (max-width: 767px) {
   /* Adjust the layout for smaller screens here */
   
   /* Center align the footer content */
-  .footer-content {
+  .footer-content{
     text-align: center;
   }
   
@@ -461,7 +689,7 @@ font-family:'Montserrat', sans-serif;
   
   /* Add some space between the icons */
   .icons a {
-    margin-right: 10px;
+    margin-left: 20px;
   }
   
   /* Center align the company and contact sections */
@@ -607,14 +835,13 @@ font-family:'Montserrat', sans-serif;
     margin-bottom: 5px;
   }
 }
-
-       </style>
+      </style>
 </head>
 <body>
-   <main class="container-fluid">
+   <main class="container-fluid finishup">
        
     <!-- nav section -->
-    <nav class="navbar navbar-expand-md navbar-Light bg-light fixed-top  fw-bolder">
+    <nav class="navbar  navbar-expand-md navbar-Light fw-bolder">
           
   <div class="container-fluid">
     
@@ -634,7 +861,7 @@ font-family:'Montserrat', sans-serif;
             <a class="nav-link active " href="#services">Repair Services</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link active" href="#repair">Schedule a Repair</a>
+            <a class="nav-link active" href="#">Schedule a Repair</a>
         </li>
         <li class="nav-item">
             <a class="nav-link active" href="#contactus">Contact Us</a>
@@ -647,16 +874,16 @@ font-family:'Montserrat', sans-serif;
 </nav>
 
 <!-- Hero section -->
-<section id="repair" class="background">
+<section class="background">
   <div id="carouselExampleFade color-overlay" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="row">
           <div class="col-md-6">
             <div class="carousel typing">
-                    <h1 class="text">Experience top-notch gadget repair services like never before</h1>
+                    <h1 class="text1">Experience top-notch gadget repair services like never before</h1>
               <p class="fix">Fast, Reliable, Affordable Repair Services from smartphones to laptops, we fix it all.</p>
-              <button class="btn">Shedule a Repair Now</button>
+              <a href="#contactus"><button class="btn">Shedule a Repair Now</button></a>
             </div>
           </div>
           <div class="col-md-6">
@@ -668,9 +895,9 @@ font-family:'Montserrat', sans-serif;
         <div class="row">
           <div class="col-md-6">
             <div class="carousel typing">
-              <h1 class="text">Repair your gadgets with confidence and ease</h1>
+              <h1 class="text1">Repair your gadgets with confidence and ease</h1>
               <p class="fix">Get your gadgets repaired by professional technicians- Choose us.</p>
-              <button class="btn">Shedule a Repair Now</button>
+              <a href="#contactus"><button class="btn">Shedule a Repair Now</button></a>
             </div>
           </div>
           <div class="col-md-6">
@@ -685,24 +912,24 @@ font-family:'Montserrat', sans-serif;
 <!-- Services -->
 <div id="services">
             <div class="vision">
-                <h5 class="sv about-text">SERVICE</h5>
-                <h1 class="about-h1"> Our Goal </h1>
+                <h5 class="sv about-text">SERVICES</h5>
+                <h1 class="about-h1"> Our Services </h1>
             </div>
             <div class="grid">
-               <div id="ph">
+               <div id="ph" class="block">
                    <i class="fa fa-mobile fa-5x service-fix" style="color: #001423;" aria-hidden="true"></i>
                    <h1 class="set-h"> Phone Repair</h1>
-                   <p class="set">We offer fast reliable phone repairs by expert and technicians withyears of experience. From cracked screen to battery replacements, we use only certified and original phone parts to get you back to track with your busy schedule.</p>
+                   <p class="set">We offer fast reliable phone repairs by expert and technicians with years of experience. From cracked screens to battery replacements, we use only certified and original phone parts to get you back on track with your busy schedule.</p>
                 </div>
                 <div id="lap">
                    <i class="fa fa-laptop fa-5x service-fix" style="color: #001423;" aria-hidden="true"></i>
                    <h1 class="set-h">Laptop Repair</h1>
-                   <p class="set">We offer standared and swift laptop repair services to keep you productive and connected. Our skill technicians have years of experience repairing all typs of laptop issues, ranging from hardware failures to software malfunctions using original repair parts only.</p>
+                   <p class="set set1">We offer standared laptop repair services to keep you productive and connected. We handle repairs in all types of laptop issues using original repair parts only.</p>
                 </div>
                 <div id="tb">
                    <i class="fa fa-tablet fa-5x service-fix" style="color: #001423;"  aria-hidden="true"></i>
                    <h1 class="set-h">Tablet Repair</h1>
-                   <p class="set">We understand the importance of tablet repair in our daily life. That is why we offer quick and affordable tablet repair services to get you back to your digital need as soon as possible.</p>
+                   <p class="set set1">We understand the importance of your tablet in your daily life. That's why we offer quick and affordable tablet repair services to get you back to your digital needs as soon as possible.</p>
                 </div>
             </div>
         </div>
@@ -719,7 +946,7 @@ font-family:'Montserrat', sans-serif;
         <div class="about-contain">
         <div class="about-txt">
         <p class="txt fix">
-        We are a leading gadget repair service provider with a mission to provide fast, reliable, and affordable repairs for your digital devices. Our team of expert technicians has years of experience repairing smartphones, laptops, tablets, and other electronic devices. We strive to provide quick turnaround times to get you back your digital life as soon as possible.
+        We are a leading gadget repair service provider with a mission to provide fast, reliable, and affordable repairs for your digital devices. Our team of expert technicians has years of experience repairing smartphones, laptops, tablets, and other electronic devices. We strive to provide quick turnaround times to get you back to your digital life as soon as possible.
         <p>
         </div>
         <div class="about-img">
@@ -732,96 +959,149 @@ font-family:'Montserrat', sans-serif;
         </div>
         
         <div class="about-txt">
-            <p class="txt fx">At Gadget REPAIRHQ we believe in using only the highest quality replacement parts to ensure that your devices are restored to their original condition, satisfied guarantee on all of our repairs. transparency in pricing of services to ensure customer trust. Our online scheduling system makes it easy to book an appointment for your gadget repair needs. We also offer a range of repair services, from screen replacements to battery upgrades, to meet all of your device repair needs. Choose Gadgets RepairHQ for hassle-free gadget repairs that you count on. <br> Contact us today to schedule your repair appointment! </p>
+            <p class="txt fx">At Gadget RepairHQ we believe in using only the highest quality replacement parts to ensure that your devices are restored to their original condition, satisfied guarantee on all of our repairs. transparency in pricing of services to ensure customer trust. Our online scheduling system makes it easy to book an appointment for your gadget repair needs. We also offer a range of repair services, from screen replacements to battery upgrades, to meet all of your device repair needs. Choose Gadgets RepairHQ for hassle-free gadget repairs that you can count on.<br>Contact us today to schedule your repair appointment! </p>
         </div>
          </div>
         <div class="center">
-        <button class="btn">Shedule a Repair Now</button>
+        <a href="#contactus"><button class="btn">Shedule a Repair Now</button></a>
         </div>
         </div>
         
 </section>
 
 <!-- Testimonials -->
-<!-- <section class="contain-test">
-                </div>
-<div class="testimonials">
-              <div class="sub-testimonials">
-                <div>
-                  <h4 class="sv about-text">TESTIMONIALS</h4>
-                  <h3 class="wcu about-h1">What Customer <br> Say About Us</h3>
-                </div>
-                <div class="service">
-                  <div id="ph" >
-                    <div id="chi">
-                      <div>
-                        <i class="fa fa-quote-left fa-2x" aria-hidden="true" style="color: #001423;"></i>
-                      </div>
-                      <div>
-                        <p>"I recently had my laptop repaired, and I couldn't be happier  with the services. The repair was completed quickly and efficiently, and my laptop is now working" </p>
-                      </div> 
-                      <div>
-                        <img src="/IMAGE/unnamed (2).jpg" alt="" height="50" width="50" class="IMAGE">
-                      </div> 
-                      <div class="name" style="font-size: large;">Chinenye</div>
-                      <div class="work">Manager</div>
-                      <div class="icon">
-                        <i class="fa fa-star" aria-hidden="true" style="color: yellow;" ></i>
+<section class="contain">
+    <div class="top">
+            <h5 class="sv about-text">TESTIMONIALS</h5>
+            <h1 class="about-h1">What customer <br>say about us</h1>
+            <div class="icont">
+            <i class="fa-solid fa-circle-arrow-right fa-fade mve" style="font-size:35px; color:#0077B5;"></i>
+            </div>
+           </div>
+            <div class="general">
+                
+<div class="first base"> 
+            <div class="icons">
+               <i class="fa fa-quote-left fa-2x service-fix" aria-hidden="true" style="color: #001423;"></i>
+            </div>
+                <p class="set">"I recently had my laptop repaired, and I couldn't be happier  with the services. The repair was completed quickly and efficiently, and my laptop is now working"</p>
+            <div class="sec">
+                <img src="image/Chinenye.jpg" alt="" height="50" width="50" class="IMAGE"> 
+                <div class="sec1">
+                <h2 class="fontme">Chinenye</h2>
+                <p class="fixit white">Product Manager</p>              
+                </div> 
+                <i class="fa fa-star" aria-hidden="true" style="color: yellow;" ></i>
                         <i class="fa fa-star" aria-hidden="true"  style="color: yellow;" ></i>
                         <i class="fa fa-star" aria-hidden="true"  style="color: yellow;" ></i>
                         <i class="fa fa-star" aria-hidden="true"  style="color: yellow;" ></i>
-                        <i class="fa fa-star" aria-hidden="true"  style="color: yellow;" ></i>
-                      </div>
-                    </div>
-                    <div id="iny">
-                      <div>
-                        <i class="fa fa-quote-left fa-2x" aria-hidden="true" style="color: #001423;"></i>
-                      </div>
-                      <div>
-                        <p>"I brougth my tablet for a battery replacement, and I was impressed with the quality of service i received" </p>
-                      </div> 
-                      <div id="nwi">
-                        <div id="pic">
-                          <img src="/IMAGE/unnamed (1).jpg" alt="" height="50" width="50" class="IMAGE">
-                        </div> 
-                         <div class="nm">
-                          <div class="name" style="font-size: large;">Inyene</div>
-                          <div class="work">Content Creator</div>
-                         </div>
-                      <div class="icon">
+                        <i class="fa fa-star" aria-hidden="true"  style="color: yellow;" > </i>    
+            </div>
+            </div>        
+            
+            
+           <div class="second"> 
+            <div class="icons">
+               <i class="fa fa-quote-left fa-2x service-fix" aria-hidden="true" style="color: #001423;"></i>
+            </div>
+                <p class="set mix">"I brougth my tablet for a battery replacement, and I was impressed with the quality of service i received"</p>
+            <div class="sec">
+                <img src="image/iyene.jpg" alt="" height="50" width="50" class="IMAGE">
+                <div class="sec1">
+                <h2 class="fontme">Inyene</h2>
+                <p class="fixit">Content creator</p>              
+                </div> 
+                <i class="fa fa-star" aria-hidden="true" style="color: yellow;" ></i>
                         <i class="fa fa-star" aria-hidden="true"  style="color: yellow;" ></i>
                         <i class="fa fa-star" aria-hidden="true"  style="color: yellow;" ></i>
                         <i class="fa fa-star" aria-hidden="true"  style="color: yellow;" ></i>
-                        <i class="fa fa-star" aria-hidden="true"  style="color: yellow;" ></i>
-                        <i class="fa fa-star" aria-hidden="true"  style="color: yellow;" ></i>
-                      </div>
-                      </div>
-                    </div>
-                    <div id="lov">
-                      <div>
-                        <i class="fa fa-quote-left fa-2x" aria-hidden="true" style="color: #001423;"></i>
-                      </div>
-                      <div>
-                        <p>"I had a cracked screen on my smartphone, and they were able to fix it in no time. The technician was friendly and professional" </p>
-                      </div> 
-                      <div>
-                        <img src="/IMAGE/unnamed.jpg" alt="" height="50" width="50" class="IMAGE">
-                      </div> 
-                      <div class="name" style="font-size: large;">Loveth</div>
-                      <div class="work">Digital Marketer</div>
-                      <div class="icon">
-<i class="fa fa-star" aria-hidden="true" style="color: yellow;" ></i>
+                        <i class="fa fa-star" aria-hidden="true"  style="color: yellow;" > </i>    
+            </div>
+            </div>
+            
+            <div class="third">
+            <div class="icons">
+               <i class="fa fa-quote-left fa-2x service-fix" aria-hidden="true" style="color: #001423;"></i>
+            </div>
+                <p class="set mixi">"I had a cracked screen on my smartphone, and they were able to fix it in no time. The technician was friendly and professional"</p>
+            <div class="sec hit">
+                <img src="image/loveth.jpg" alt="" height="50" width="50" class="IMAGE">  
+            <div class="sec1">
+                <h2 class="fontme">Nnenne</h2>
+                <p class="fixit">Digital marketer</p>                
+            </div>
+                <i class="fa fa-star" aria-hidden="true" style="color: yellow;" ></i>
                         <i class="fa fa-star" aria-hidden="true"  style="color: yellow;" ></i>
                         <i class="fa fa-star" aria-hidden="true"  style="color: yellow;" ></i>
                         <i class="fa fa-star" aria-hidden="true"  style="color: yellow;" ></i>
+                        <i class="fa fa-star" aria-hidden="true"  style="color: yellow;" > </i>    
+            </div>
+            </div>
+        
+          
+           <!-- second slide --> 
+           
+               <div class="first base1"> 
+            <div class="icons">
+               <i class="fa fa-quote-left fa-2x service-fix" aria-hidden="true" style="color: #001423;"></i>
+            </div>
+                <p class="set">"I had a hardware issue with my laptop that that I couldn't figure out on my own. They were able to diagnose the problem quickly and provide a cost-effective solution"</p>
+            <div class="sec">
+                <img src="image/peter.jpg" alt="" height="50" width="50" class="IMAGE"> 
+                <div class="sec1">
+                <h2 class="fontme">Peter</h2>
+                <p class="fixit">Web-developer</p>              
+                </div> 
+                <i class="fa fa-star" aria-hidden="true" style="color: yellow;" ></i>
                         <i class="fa fa-star" aria-hidden="true"  style="color: yellow;" ></i>
-                      </div>
-                    </div>
-                  </div>
-              </div>
+                        <i class="fa fa-star" aria-hidden="true"  style="color: yellow;" ></i>
+                        <i class="fa fa-star" aria-hidden="true"  style="color: yellow;" ></i>
+                        <i class="fa fa-star" aria-hidden="true"  style="color: yellow;" > </i>    
+            </div>
+            </div>             
+                    
+              <div class="third">
+            <div class="icons">
+               <i class="fa fa-quote-left fa-2x service-fix" aria-hidden="true" style="color: #001423;"></i>
+            </div>
+                <p class="set mix">"I've used Gadget RepairHQ for several gadget repairs over the years, and they always exceed my expectations."</p>
+            <div class="sec hit">
+                <img src="image/Henry.jpg" alt="" height="50" width="50" class="IMAGE">  
+            <div class="sec1">
+                <h2 class="fontme">Henry</h2>
+                <p class="fixit">YouTuber</p>                
+            </div>
+                <i class="fa fa-star" aria-hidden="true" style="color: yellow;" ></i>
+                        <i class="fa fa-star" aria-hidden="true"  style="color: yellow;" ></i>
+                        <i class="fa fa-star" aria-hidden="true"  style="color: yellow;" ></i>
+                        <i class="fa fa-star" aria-hidden="true"  style="color: yellow;" ></i>
+                        <i class="fa fa-star" aria-hidden="true"  style="color: yellow;" > </i>    
+            </div>
+            </div>
+            
+              <div class="third">
+            <div class="icons">
+               <i class="fa fa-quote-left fa-2x service-fix" aria-hidden="true" style="color: #001423;"></i>
+            </div>
+                <p class="set mixit">"I had a water damaged phone that I thought was beyond repair, but Gadget RepairHQ was able to fix it like new. They were able to save all my data. "</p>
+            <div class="sec hit">
+                <img src="image/Franklin.jpg" alt="" height="50" width="50" class="IMAGE">  
+            <div class="sec1">
+                <h2 class="fontme">Franklin</h2>
+                <p class="fixit">Photographer</p>                
+            </div>
+                <i class="fa fa-star" aria-hidden="true" style="color: yellow;" ></i>
+                        <i class="fa fa-star" aria-hidden="true"  style="color: yellow;" ></i>
+                        <i class="fa fa-star" aria-hidden="true"  style="color: yellow;" ></i>
+                        <i class="fa fa-star" aria-hidden="true"  style="color: yellow;" ></i>
+                        <i class="fa fa-star" aria-hidden="true"  style="color: yellow;" > </i>    
+            </div>
+            </div>
+            
+            
             </div>
 </section>
-   -->
+
   <!-- contact us -->
   <section id="contactus" class="contacts">
        <div>
@@ -845,20 +1125,20 @@ font-family:'Montserrat', sans-serif;
                   <div class="block">
                   <div class="box1 change">
                     <label for="Phonenumber">Phone Number*</label>
-                    <input type="number" placeholder="+234" id="number" required>
+                    <input type="number" placeholder="Enter Phone Number" id="number" required>
                   </div>
                   <div class="box1 change">
                     <label for="Email">Email*</label>
-                    <input type="email" placeholder="Email" id="email" name="email" class="form-c"required>
+                    <input type="email" placeholder="Enter Email" id="email" name="email" class="form-c"required>
                   </div>
     </div>
    <div class="form-group change">
-                <label for="message">Message</label>
-                <textarea class="form-control" id="message" rows="10" width="100%" placeholder="Enter your message"></textarea>
+                <label for="message">Tell us what you would like us to do for you</label>
+                <textarea class="form-control" id="message" rows="10" width="100%" placeholder="Type message"></textarea>
             </div>
                  </div>
                  </div>
-                 <div class="center">
+                 <div class="center btn1">
         <button class="btn">Submit</button>
         </div>
                  </div>
@@ -872,14 +1152,14 @@ font-family:'Montserrat', sans-serif;
 <!-- footer section -->
 <footer>
 <section class="footer">
-    <div class="footer-content">
-                <img src="image/Logo.png" alt="" width="200" height="auto">
-                <p>Connect with us on social media.Follow,<br>like and leave a comment.Visit our store<br> today and experience top-notch gadget<br> repair service like never before.</p>
+    <div class="footer-content content">
+                <img src="image/logo.png" alt="" width="200" height="auto">
+                <p class="set push">Connect with us on social media.Follow,<br>like and leave a comment.Visit our store<br> today and experience top-notch gadget<br> repair service like never before.</p>
                 <div class="icons">
-                    <a href="#"><i class="fab fa-twitter" style="color: #001423;" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fab fa-linkedin" style="color: #001423;" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fab fa-instagram" style="color: #001423;" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fab fa-facebook-square" style="color: #001423;" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fab fa-twitter fits" style="color: #0077B5;" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fab fa-linkedin fits" style="color: #0077B5;" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fab fa-instagram fits" style="color: #0077B5;" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fab fa-facebook-square fits" style="color: #0077B5;" aria-hidden="true"></i></a>
                 </div>
             </div>
             <div class="footer-content space move med">
