@@ -82,7 +82,7 @@ At this time, we are not accepting contributions to the website as it is managed
 
 ## License
 
-This website and its content are protected under [GadgetRepairHQ] (https://daminert.github.io/GadgetRepairHQ/). Unauthorized use, reproduction, or distribution is strictly prohibited.
+This website and its content are protected under [GadgetRepairHQ](https://daminert.github.io/GadgetRepairHQ/). Unauthorized use, reproduction, or distribution is strictly prohibited.
 
 ## Conclusion
 
