@@ -6,20 +6,16 @@ Welcome to the Gadget Repair Service Website repository! This project is a websi
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
-2. [Website Overview](#website-overview)
-3. [Technologies Used](#technologies-used)
-4. [Features](#features)
-5. [Team](#team)
-6. [Getting Started](#getting-started)
-7. [Installation](#installation)
-8. [Usage](#usage)
-9. [Contributing](#contributing)
-10. [License](#license)
+1. [Website Overview](#website-overview)
+2. [Technologies Used](#technologies-used)
+3. [Features](#features)
+4. [Team](#team)
+5. [Getting Started](#getting-started)
+6. [Installation](#installation)
+7. [Usage](#usage)
+8. [Contributing](#contributing)
+9. [License](#license)
 
-## Introduction
-
-We are a leading gadget repair service provider with a mission to provide fast, reliable, and affordable repairs for your digital devices. Our team of expert technicians has years of experience repairing smartphones, laptops, tablets, and other electronic devices. We strive to provide quick turnaround times to get you back to your digital life as soon as possible.
 
 ## Website Overview
 
