@@ -605,7 +605,7 @@ input[type=number],.form-control{
 
 
 /* Media query for screens with a maximum width of 768 pixels (e.g., small screens) */
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .form {
         padding: 10px; /* Adjust padding to fit the form better on small screens */
         padding-bottom: 10px;
@@ -1185,7 +1185,22 @@ input[type=number],.form-control{
         </div>
                  </div>
                 </form>  
-              
+                   
+      <style>
+@media only screen and (max-width: 767px){
+   .ok {
+      font-size: 1.5rem;
+      line-height: 1.5;
+   }
+}
+
+@media only screen and (max-width: 375px){
+   .spec{
+       width:100%;
+   }
+}
+</style>
+
     </section>
 
               
